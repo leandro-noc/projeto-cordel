@@ -2,6 +2,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@700&display=swap');
 
+:root {
+    --fonte-destaque: 'Passion One', cursive;
+    --fonte-padrao: Arial, Helvetica, sans-serif;
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -10,17 +15,34 @@
 header {
     background-color: black;
     color: white;
-    height: 210px;
+    min-height: 350px;
     text-align: center;
+    
+    
 }
 
 header h1 {
     padding: 50px 0px 10px 0px;
-    font-family:'Passion One', cursive;
-    font-size: 5em;
+    font-family: var(--fonte-destaque);
+    font-size: 8em;
     font-weight: normal;
+    
+    
+}
+
+header p {
+    font-size: 1.4em;
+    font-family: var(--fonte-padrao);
 }
 
 header a {
     color: white;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+p {
+    padding: 20px 0px 20px 30px;
+
 }
