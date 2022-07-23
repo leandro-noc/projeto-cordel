@@ -2,9 +2,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
 :root {
     --fonte-destaque: 'Passion One', cursive;
     --fonte-padrao: Arial, Helvetica, sans-serif;
+    --fonte-poema: 'Sriracha', cursive;
 }
 
 * {
@@ -42,7 +45,33 @@ header a {
 
 }
 
+header a :hover {
+    text-decoration: underline;
+}
+
 p {
     padding: 20px 0px 20px 30px;
-
+    font-family: var(--fonte-poema);
+    font-size: 31px;
+    
 }
+
+#container {
+    background-image: url(imagens/background001.jpg);
+    background-position: center center;
+    height: 60vh;
+    
+    position: relative;
+}
+
+#conteudo {
+    background-color: rgba(0, 0, 0, 0.404);
+    width: 420px;
+    color: white;
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
