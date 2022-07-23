@@ -15,6 +15,11 @@
     padding: 0px;
 }
 
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
+}
+
 header {
     background-color: black;
     color: white;
@@ -24,13 +29,12 @@ header {
     
 }
 
-header h1 {
+header > h1 {
     padding: 50px 0px 10px 0px;
     font-family: var(--fonte-destaque);
     font-size: 8em;
     font-weight: normal;
-    
-    
+    font-variant: small-caps;
 }
 
 header p {
@@ -38,40 +42,46 @@ header p {
     font-family: var(--fonte-padrao);
 }
 
-header a {
+header a, footer a {
     color: white;
     text-decoration: none;
-    font-weight: bold;
-
+    font-weight: bolder;
 }
 
-header a :hover {
+header a:hover, footer a:hover {
     text-decoration: underline;
 }
 
-p {
-    padding: 20px 0px 20px 30px;
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
     font-family: var(--fonte-poema);
-    font-size: 31px;
-    
+    padding-left: 30px;
 }
 
-#container {
-    background-image: url(imagens/background001.jpg);
-    background-position: center center;
-    height: 60vh;
-    
-    position: relative;
+section.normal {
+    background-color: white;
+    color: black;
 }
 
-#conteudo {
-    background-color: rgba(0, 0, 0, 0.404);
-    width: 420px;
+section.imagem {
+    background-color: rgb(119, 119, 119);
     color: white;
-    position: absolute;
-    left: 20%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+}
+
+section.imagem > p {
+    width: 400px;
+    background-color: black;
+}
+
+footer p {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-family: var(--fonte-padrao);
+
 }
 
 
