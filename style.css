@@ -13,33 +13,29 @@
 * {
     margin: 0px;
     padding: 0px;
+    font-size: 1em;
 }
 
 html, body {
     min-height: 100vh;
-    background-color: darkgray;
+    font-family: var(--fonte-padrao);
 }
 
 header {
     background-color: black;
     color: white;
-    min-height: 350px;
     text-align: center;
-    
-    
 }
 
 header > h1 {
-    padding: 50px 0px 10px 0px;
+    padding-top: 50px;
     font-family: var(--fonte-destaque);
-    font-size: 8em;
-    font-weight: normal;
     font-variant: small-caps;
+    font-size: 10vW;
 }
 
 header p {
-    font-size: 1.4em;
-    font-family: var(--fonte-padrao);
+    padding-bottom: 50px;
 }
 
 header a, footer a {
@@ -58,6 +54,11 @@ section {
     line-height: 2em;
     font-family: var(--fonte-poema);
     padding-left: 30px;
+    font-size: 3.5vw;
+}
+
+section > p {
+    padding-bottom: 2em;
 }
 
 section.normal {
@@ -66,13 +67,28 @@ section.normal {
 }
 
 section.imagem {
-    background-color: rgb(119, 119, 119);
+    background-color: rgba(119, 119, 119, 0.336);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.459) ;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 section.imagem > p {
-    width: 400px;
-    background-color: black;
+    display: inline-block; 
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.596);
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.534);
+}
+
+section#img01 {
+    background-image: url(imagens/background001.jpg);
+    background-position: right center;
+}
+
+section#img02 {
+    background-image: url(imagens/background002.jpg);
+    
 }
 
 footer p {
@@ -81,7 +97,6 @@ footer p {
     text-align: center;
     padding: 10px;
     font-family: var(--fonte-padrao);
-
 }
 
 
